@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICCCCC!!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. ESTILOS DEL BODY (Sin filtro blur) */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            color: #E0E0E0; 
+            min-height: 100vh;
+            /* El body ya no tiene la imagen ni el blur */
+        }
+        
+        /* 2. CAPA DE FONDO CON BLUR Y OSCURIDAD */
+        .background-blur {
+            /* REEMPLAZA ESTA URL si no estás usando la imagen local */
+            background-image: url('pinturas.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: blur(3px); /* Aplicamos el desenfoque SOLO aquí */
+            z-index: -2; /* Lo colocamos en el fondo absoluto */
+        }
+
+        /* 3. Superposición Oscura (para que el texto se lea mejor) */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Capa oscura semi-transparente */
+            z-index: -1; /* Encima del fondo, pero debajo del contenido */
+        }
+        
+        /* 4. Contenedor Central con Contenido sin desenfoque */
+        .content-wrapper {
+            /* Centra el contenido en el medio de la pantalla */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 650px;
+        }
+
+        .container {
+            background-color: rgba(18, 18, 18, 0.95);
+            padding: 50px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            border: 2px solid #57B846; 
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 5. Estilo del Título Principal */
+        h1 {
+            color: #57B846;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(87, 184, 70, 0.3);
+            padding-bottom: 10px;
+        }
+
+        /* 6. Estilo del Párrafo del Mensaje */
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        /* 7. Estilo del Botón de Enlace */
+        .btn-spotify {
+            text-decoration: none;
+            color: white;
+            background-color: #1DB954; 
+            padding: 18px 35px;
+            border-radius: 50px; 
+            font-size: 1.3em;
+            display: inline-block;
+            margin-top: 30px;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+            letter-spacing: 1px;
+        }
+
+        /* Efecto al pasar el ratón (hover) */
+        .btn-spotify:hover {
+            background-color: #1ED760; 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="overlay"></div>
+    
+    <div class="content-wrapper">
+        <div class="container">
+            <h1>NIC NIC NIC SONGS😁👍🙌🙂❤️</h1>
+            <p>"La música es como un idioma universal, una forma de arte que nos permite conocernos, conectar emociones y sentir el mundo mediante ondas de sonido.</p>
+                                                       <p> "Frases que yan siempre dijo xD"</p>
+                             </p>En esta playlist quiero que conozcas un poco lo que me gusta y lo que me hace ser yo.</p> 
+                                                        <p> "Con mucho cariño"</p>
+                                                                        <p>yann:))</p>
+            
+            <a href="https://open.spotify.com/playlist/2k91hQm9PuGxHoHrELVpCh?si=6170518b4a784f21&pt=97b9e0da7df09a87ebbf494c60871427" class="btn-spotify">
+                PERDONAME NO LA PUDE PONER EN APPLEMUSIC
+                         (Abrir en Spotify)
+            </a>
+        </div>
+    </div>
+</body>
+</html>
